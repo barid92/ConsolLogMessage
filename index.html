@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Moja strona</title>
+  </head>
+  <body onload="init()">
+  <h1>Moja strona internetowa</h1>
+  </body>
+  <script type="text/javascript">
+  function init()
+  {
+      setInterval(function(){ 
+           message();
+          
+          }, 3000);
+
+  }
+  function message()
+  {
+		var isFirefox= /Firefox/.test(navigator.userAgent);
+		var isChrome= /Google Inc/.test(navigator.vendor);
+		var isOpera= /OPR/.test(navigator.userAgent);
+		
+		if(isChrome || isOpera)
+		{
+		console.log("%c Uwaga", 'color: red; font-size:48px'); 
+       console.log("%c ta konsola służy wyłącznie dla twórców strony internetowej", 'background: red; color: white;font-size:20px'); 
+	    console.log("%c jeżeli ktoś polecił ci skopiować i wkleić tu coś", 'background: red; color: white;font-size:20px'); 
+	  console.log("%c jest to oszustwo, które ma na celu okradzenie ciebie", 'background: red; color: white;font-size:20px'); 
+	   console.log("%c w razie pytań skontaktuj się z administracją", 'background: red; color: white;font-size:20px'); 
+	   console.log("%c xyz@xyz.xyz", 'background: yellow; color: black;font-size:20px'); 
+	   console.log("%c     ", "background-image: url('https://media.tenor.com/images/bf2553d895448f25a5c5fbad86a3e985/tenor.gif');font-size: 180px;no-repeat;"); 
+		}
+		else if(isFirefox)
+		{
+		console.log("%c Uwaga", 'color: red; font-size:48px'); 
+       console.log("%c ta konsola służy wyłącznie dla twórców strony internetowej", 'background: red; color: white;font-size:20px'); 
+	    console.log("%c jeżeli ktoś polecił ci skopiować i wkleić tu coś", 'background: red; color: white;font-size:20px'); 
+	  console.log("%c jest to oszustwo, które ma na celu okradzenie ciebie", 'background: red; color: white;font-size:20px'); 
+	   console.log("%c w razie pytań skontaktuj się z administracją", 'background: red; color: white;font-size:20px'); 
+	   console.log("%c xyz@xyz.xyz", 'background: yellow; color: black;font-size:20px'); 
+		}
+		else{
+			 console.log("Uwaga");
+        console.log("Ta konsola służy wyłącznie dla twórców strony internetowej");
+	    console.log("Jeżeli ktoś polecił Ci skopiować i wkleić tu coś");
+	    console.log("jest to oszustwo, które ma na celu okradzenie Ciebie");
+	    console.log("w razie pytań skontaktuj się z administracją");
+	    console.log("xyz@xyz.xyz");
+		}
+		
+	
+  
+	    
+  }
+  </script>
+
+</html>
